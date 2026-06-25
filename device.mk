@@ -75,5 +75,14 @@ PRODUCT_SOONG_NAMESPACES += \
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 13,5,2
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 8
+
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Helio_G80
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/lancelot/lancelot-vendor.mk)
